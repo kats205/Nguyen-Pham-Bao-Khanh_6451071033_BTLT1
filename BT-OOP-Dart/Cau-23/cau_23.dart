@@ -2,13 +2,13 @@ enum Gender { male, female, others }
 
 void main() {
   print('MSSV: 6451071033');
-  print('--- Test Điều Kiện Đúng (Happy Path) ---');
+  print('--- Test Case Đúng ---');
   print('Tất cả các giá trị của Enum Gender:');
   for (var gender in Gender.values) {
     print('- ${gender.name}');
   }
 
-  print('\n--- Test Điều Kiện Sai (Edge Case) ---');
+  print('\n--- Test Case Sai ---');
   try {
     String input = 'alien';
     // Cố gắng tìm giá trị enum tương ứng với chuỗi đầu vào sai lệch

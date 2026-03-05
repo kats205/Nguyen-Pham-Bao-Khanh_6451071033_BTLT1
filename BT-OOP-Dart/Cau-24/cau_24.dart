@@ -30,7 +30,7 @@ class Cat extends Animal {
 
 void main() {
   print('MSSV: 6451071033');
-  print('--- Test Điều Kiện Đúng (Happy Path) ---');
+  print('--- Test Case Đúng ---');
   try {
     Cat myCat = Cat(1, 'Tom', 'Blue/Grey', 'Meow');
     myCat.printInfo();
@@ -38,7 +38,7 @@ void main() {
     print(e);
   }
 
-  print('\n--- Test Điều Kiện Sai (Edge Case) ---');
+  print('\n--- Test Case Sai ---');
   try {
     Cat errorCat = Cat(-1, '', 'Red', 'Bark');
     errorCat.printInfo();

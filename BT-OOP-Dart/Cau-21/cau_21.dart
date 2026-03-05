@@ -19,7 +19,7 @@ class Laptop {
 
 void main() {
   print('MSSV: 6451071033');
-  print('--- Test Điều Kiện Đúng (Happy Path) ---');
+  print('--- Test Case Đúng ---');
   try {
     Laptop laptop1 = Laptop(1, 'ThinkPad', 16);
     Laptop laptop2 = Laptop(2, 'MacBook', 8);
@@ -32,7 +32,7 @@ void main() {
     print(e);
   }
 
-  print('\n--- Test Điều Kiện Sai (Edge Case) ---');
+  print('\n--- Test Case Sai ---');
   try {
     Laptop laptopError = Laptop(4, 'Asus', -4);
     laptopError.display();

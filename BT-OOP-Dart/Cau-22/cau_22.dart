@@ -20,7 +20,7 @@ class House {
 
 void main() {
   print('MSSV: 6451071033');
-  print('--- Test Điều Kiện Đúng (Happy Path) ---');
+  print('--- Test Case Đúng ---');
   try {
     List<House> houses = [
       House(1, 'Villa', 500.0),
@@ -36,7 +36,7 @@ void main() {
     print(e);
   }
 
-  print('\n--- Test Điều Kiện Sai (Edge Case) ---');
+  print('\n--- Test Case Sai ---');
   try {
     House houseError = House(4, 'Ghost house', -100.0);
     print(houseError);
