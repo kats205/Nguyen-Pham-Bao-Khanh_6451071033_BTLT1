@@ -21,9 +21,10 @@ void main() {
 
 List<int> generateFibonacci(int length) {
   if (length == 0) return [];
-  if (length == 1) return [1];
+  if (length == 1) return [0];
+  if (length == 2) return [0, 1];
 
-  List<int> list = [1, 1];
+  List<int> list = [0, 1];
   for (int i = 2; i < length; i++) {
     list.add(list[i - 1] + list[i - 2]);
   }
